@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Home</title>
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-926d155f.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-38df3f6f.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-9a8a780f.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-20a38db6.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-1c1bbbf5.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-051977bf.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-926d155f.js";
+			start({
+				target: document.body,
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-9a8a780f.js"),
+						import("/./_app/pages/index.svelte-20a38db6.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<header class="svelte-1yb0tib"><div class="corner svelte-1yb0tib">Built with: 
+<a href="https://kit.svelte.dev" class="svelte-1yb0tib"><img src="/_app/assets/svelte-logo.87df40b8.svg" alt="SvelteKit" class="svelte-1yb0tib"></a></div>
+
+
+	<div class="corner svelte-1yb0tib"></div>
+</header>
+
+<main class="svelte-j5vtu5">
+
+<h1 class="welcome svelte-1g7gk0r">JSDoc Type Generator
+</h1>
+<h2 style="font-size: larger; text-align: center;">This tool will generate JSDoc types for valid JSON inserted into the textarea.
+</h2>
+<section class="svelte-1g7gk0r"><label for="jsonInput">Enter/Paste JSON here:</label>
+	<textarea name="jsonInput" id="" cols="50" rows="10">{
+    "sampleString": "some string",
+    "sampleNumber": 1,
+    "sampleBoolean": false,
+    "sampleObject": {
+        "key": "value"
+    },
+    "sampleArray": ["asdf"]
+}</textarea>
+	<div style="position: relative; margin-top: 1em;"><button style="position: absolute; right: 0; top: 0">Copy</button>
+	<pre style="margin: 0;;"><code>/**
+* @typedef {object} root
+* @property {string} sampleString
+* @property {number} sampleNumber
+* @property {boolean} sampleBoolean
+* @property {sampleObject} sampleObject
+* @property {string[]} sampleArray
+*/
+
+/**
+* @typedef {object} sampleObject
+* @property {string} key
+*/
+</code></pre></div>
+</section></main>
+
+<footer class="svelte-j5vtu5"><p>visit <a href="https://kit.svelte.dev" class="svelte-j5vtu5">kit.svelte.dev</a> to learn SvelteKit</p>
+</footer>
+
+
+
+	
+</div>
+	</body>
+</html>
