@@ -1,38 +1,9 @@
-# create-svelte
+[![built with sveltekit](https://img.shields.io/badge/built%20with-sveltekit-ff3e00?logo=svelte&style=flat-square)]((https://kit.svelte.dev/))
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&logo=prettier)](https://github.com/prettier/prettier)
+[![linter: eslint](https://img.shields.io/badge/linter-eslint-4B32C3.svg?style=flat-square&logo=eslint)](https://eslint.org/)
+# [jsdoc-type-generator](https://rafistrauss.github.io/jsdoc-generator/)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
-## Creating a project
+Tool to generate JSDoc type definitions for a given JSON object.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+Written in [Svelte](https://svelte.dev/), built with [SvelteKit](https://kit.svelte.dev/).
