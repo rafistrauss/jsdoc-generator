@@ -6,7 +6,7 @@
 	<div class="corner">
 		Built with: 
 		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+			<img src={logo} alt="SvelteKit" title="SvelteKit" />
 		</a>
 	</div>
 
