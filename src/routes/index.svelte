@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>JSDoc Type Generator</title>
 </svelte:head>
 
 <h1 class="welcome">
