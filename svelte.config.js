@@ -8,6 +8,7 @@ export default {
 			pages: 'build',
 			assets: 'build',
 			fallback: null
-		})
+		}),
+paths: {base: '/jsdoc-generator'}
 	}
 };
