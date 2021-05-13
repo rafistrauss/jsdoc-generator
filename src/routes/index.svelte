@@ -19,6 +19,9 @@
 
 <svelte:head>
 	<title>JSDoc Type Generator</title>
+	<meta name="description" content="Automatically generate JSDoc Types from arbitrary JSON objects; infers the shape of JSON to generate JSDoc Types and lets you copy them easily">
+	<meta name="author" content="Rafi Strauss">
+	<meta property="og:image" content="jsdoc-gen.jpg" />
 </svelte:head>
 
 <h1 class="welcome">
@@ -30,7 +33,7 @@
 <section>
 
 	<label for="jsonInput">Enter/Paste JSON here:</label>
-	<textarea bind:value={inputValue} name="jsonInput" id="" cols="50" rows="10" />
+	<textarea bind:value={inputValue} name="jsonInput" id="jsonInput" cols="50" rows="10" />
 	{#if jsdoc === -1}
 		<p>Invalid JSON input</p>
 	{:else if jsdoc === null}
