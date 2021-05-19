@@ -1,5 +1,7 @@
 <script>
 	import logo from './svelte-logo.svg';
+	import github from 'simple-icons/icons/github.js';
+	import IconLink from '$lib/IconLink/index.svelte';
 </script>
 
 <header>
@@ -12,7 +14,7 @@
 
 
 	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+		<IconLink link="https://github.com/rafistrauss/jsdoc-generator" svg={github.svg} label={"Link to source code on Github"} color="#388bfd" />
 	</div>
 </header>
 
