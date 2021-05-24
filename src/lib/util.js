@@ -1,8 +1,11 @@
 /**
+ * Recursively generate an object describing the shape of the input json
+ * 
  * @param  {object} obj
  * @param  {string} objectName='obj'
- * @param  {} [shapeObject]
- * @param  {} [isRoot=true]
+ * @param  {ShapeObject} [shapeObject]
+ * @param  {boolean} [isRoot=true]
+ * @returns {ShapeObject}
  */
 function recursivelyGenerate(obj, objectName = 'obj', shapeObject = { _: {} }, isRoot = true) {
 	if (obj === null) {
@@ -17,8 +20,17 @@ function recursivelyGenerate(obj, objectName = 'obj', shapeObject = { _: {} }, i
 			shapeObject[rootKey][key] = '?'
 		}
 		else if (Array.isArray(value)) {
-			const uniqueTypes = value.reduce((acc, curr) => {
-				return acc.add(typeof curr);
+			const uniqueTypes = value.reduce((/** @type {Set} */ acc, curr) => {
+				let type = typeof curr;
+				if (Array.isArray(curr)) {
+					recursivelyGenerate(curr, key, shapeObject, false);
+				}
+				else if (typeof curr === "object") {
+					shapeObject[key] = {};
+					recursivelyGenerate(curr, key, shapeObject, false);
+					type = key;
+				}
+				return acc.add(type);
 			}, new Set());
 			const types = Array.from(uniqueTypes);
 			const shape = (types.length > 1 ? `(${types.join('|')})` : types) + '[]';
@@ -58,7 +70,7 @@ export function generateJSDocForObject(obj, objName = null) {
 /**
  * 
  * @param {string} obj 
- * @returns 
+ * @returns {string | null | number}
  */
 export function generateJSDocOrError(obj) {
 	if (obj.length < 1) {
