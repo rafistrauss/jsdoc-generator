@@ -28,7 +28,6 @@ body {
 	);
 }
 
-
 body::before {
 	content: '';
 	width: 80vw;

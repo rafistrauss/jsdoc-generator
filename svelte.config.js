@@ -9,6 +9,6 @@ export default {
 			assets: 'build',
 			fallback: null
 		}),
-paths: {base: '/jsdoc-generator'}
+		paths: { base: '/jsdoc-generator' }
 	}
 };

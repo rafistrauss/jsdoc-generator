@@ -6,15 +6,19 @@
 
 <header>
 	<div class="corner">
-		Built with: 
+		Built with:
 		<a href="https://kit.svelte.dev">
 			<img src={logo} alt="SvelteKit" title="SvelteKit" />
 		</a>
 	</div>
 
-
 	<div class="corner">
-		<IconLink link="https://github.com/rafistrauss/jsdoc-generator" svg={github.svg} label={"Link to source code on Github"} color="#388bfd" />
+		<IconLink
+			link="https://github.com/rafistrauss/jsdoc-generator"
+			svg={github.svg}
+			label={'Link to source code on Github'}
+			color="#388bfd"
+		/>
 	</div>
 </header>
 
