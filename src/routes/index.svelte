@@ -67,7 +67,7 @@
 	</script>
 </svelte:head>
 
-<h1 class="welcome">JSDoc Type Generator</h1>
+<h1 class="welcome">JSDoc Type Generator v{version}</h1>
 <h2 style="font-size: larger; text-align: center;">
 	This tool will generate JSDoc types for valid JSON inserted into the textarea.
 </h2>
@@ -79,7 +79,7 @@
 	{:else if jsdoc === null}
 		<!-- else content here -->
 	{:else}
-		<div style="position: relative; margin-top: 1em;">
+		<div id="display">
 			<button
 				on:click={async () => {
 					await navigator.clipboard.writeText(jsdoc);
@@ -108,6 +108,16 @@
 		justify-content: center;
 		align-items: center;
 		flex: 1;
+	}
+
+	textarea {
+		max-width: 100%;
+	}
+
+	#display {
+		position: relative;
+		margin-top: 1em;
+		max-width: 100%;
 	}
 
 	h1 {
