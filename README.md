@@ -12,3 +12,11 @@
 Tool to generate JSDoc type definitions for a given JSON object.
 
 Written in [Svelte](https://svelte.dev/), built with [SvelteKit](https://kit.svelte.dev/).
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
