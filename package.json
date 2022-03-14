@@ -1,6 +1,6 @@
 {
 	"name": "jsdoc-type-generator",
-	"version": "1.2.0",
+	"version": "1.4.0",
 	"scripts": {
 		"dev": "svelte-kit dev -p 3002",
 		"build": "svelte-kit build",
