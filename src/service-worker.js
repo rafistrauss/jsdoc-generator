@@ -35,9 +35,9 @@ worker.addEventListener('activate', (event) => {
 /**
  * Fetch the asset from the network and store it in the cache.
  * Fall back to the cache if the user is offline.
- * 
- * @param {Request} request 
- * @returns 
+ *
+ * @param {Request} request
+ * @returns
  */
 async function fetchAndCache(request) {
 	const cache = await caches.open(`offline${timestamp}`);
