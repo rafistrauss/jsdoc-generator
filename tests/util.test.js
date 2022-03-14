@@ -82,10 +82,10 @@ baseSuite('double object property', () => {
 */
 `;
 	const actual = generateJSDocForObject({
-		"obj": [
+		obj: [
 			{
-				"a": 1,
-				"b": 1
+				a: 1,
+				b: 1
 			}
 		]
 	});
@@ -105,19 +105,17 @@ baseSuite.skip('double object property, optional property', () => {
 */
 `;
 	const actual = generateJSDocForObject({
-		"obj": [
+		obj: [
 			{
-				"a": 1,
-				"b": 1
+				a: 1,
+				b: 1
 			},
 			{
-				"a": 1
+				a: 1
 			}
 		]
 	});
 	assert.fixture(actual, expectedResult);
 });
-
-
 
 baseSuite.run();
