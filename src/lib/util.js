@@ -1,3 +1,4 @@
+import json5 from 'json5';
 const rootSymbol = Symbol('root');
 
 /**
@@ -23,7 +24,6 @@ function recursivelyGenerate(
 	for (const [key, value] of arr) {
 		const rootKey = isRoot ? rootSymbol : objectName;
 		if (value === null) {
-			// @ts-ignore
 			shapeObject[rootKey][key] = '?';
 		} else if (Array.isArray(value)) {
 			const uniqueTypes = value.reduce((/** @type {Set} */ acc, curr) => {
@@ -33,22 +33,18 @@ function recursivelyGenerate(
 				} else if (typeof curr === 'object') {
 					shapeObject[key] = {};
 					recursivelyGenerate(curr, key, shapeObject, false);
-					// @ts-ignore
 					type = key;
 				}
 				return acc.add(type);
 			}, new Set());
 			const types = Array.from(uniqueTypes);
 			const shape = (types.length > 1 ? `(${types.join('|')})` : types) + '[]';
-			// @ts-ignore
 			shapeObject[rootKey][key] = shape;
 		} else if (typeof value === 'object') {
 			shapeObject[key] = {};
 			recursivelyGenerate(value, key, shapeObject, false);
-			// @ts-ignore
 			shapeObject[rootKey][key] = key;
 		} else {
-			// @ts-ignore
 			shapeObject[rootKey][key] = typeof value;
 		}
 	}
@@ -65,7 +61,6 @@ export function generateJSDocForObject(obj, objName = null) {
 	const typeName = objName || 'root';
 	jsdocStatements.push(`/**\n* @typedef {object} ${typeName}`);
 	jsdocStatements.push(
-		// @ts-ignore
 		Object.entries(shapeTree[rootSymbol])
 			.map(([property, propertyType]) => `* @property {${propertyType}} ${property}`)
 			.join('\n')
@@ -94,7 +89,7 @@ export function generateJSDocOrError(obj) {
 		return null;
 	}
 	try {
-		const object = JSON.parse(obj);
+		const object = json5.parse(obj);
 		return generateJSDocForObject(object);
 	} catch (error) {
 		console.error(error);
