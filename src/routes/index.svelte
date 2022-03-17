@@ -88,12 +88,12 @@
 						copyText = 'Copy';
 					}, 1500);
 				}}
-				style="position: absolute; right: 0; top: 0"
+				style="position: absolute; inset-inline-end: 0; inset-block-start: 0"
 			>
 				{copyText}
 			</button>
-			<pre style="margin: 0;;">
-				<code>
+			<pre style="margin: 0;">
+				<code style="white-space: pre-line;">
 					{jsdoc}
 				</code>
 			</pre>
@@ -111,22 +111,22 @@
 	}
 
 	textarea {
-		max-width: 100%;
+		max-inline-size: 100%;
 	}
 
 	#display {
 		position: relative;
-		margin-top: 1em;
-		max-width: 100%;
+		margin-block-start: 1em;
+		max-inline-size: 100%;
 	}
 
 	h1 {
-		width: 100%;
+		inline-size: 100%;
 	}
 
 	.welcome {
 		position: relative;
-		width: 100%;
-		margin-top: 0;
+		inline-size: 100%;
+		margin-block-start: 0;
 	}
 </style>
