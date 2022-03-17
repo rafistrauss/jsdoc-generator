@@ -1,13 +1,16 @@
-const timestamp = 1647223782128;
+const timestamp = {
+  toString: () => {
+    throw new Error("`timestamp` has been removed from $service-worker. Use `version` instead");
+  }
+};
 const build = [
-  "/jsdoc-generator/_app/start-b7454425.js",
-  "/jsdoc-generator/_app/assets/start-61d1577b.css",
-  "/jsdoc-generator/_app/pages/__layout.svelte-912b73f6.js",
-  "/jsdoc-generator/_app/assets/pages/__layout.svelte-3361b524.css",
-  "/jsdoc-generator/_app/error.svelte-ccf529cd.js",
-  "/jsdoc-generator/_app/pages/index.svelte-cbce26c8.js",
+  "/jsdoc-generator/_app/start-c548ecc1.js",
+  "/jsdoc-generator/_app/pages/__layout.svelte-aa436e60.js",
+  "/jsdoc-generator/_app/assets/pages/__layout.svelte-4f87cdf8.css",
+  "/jsdoc-generator/_app/error.svelte-b249458e.js",
+  "/jsdoc-generator/_app/pages/index.svelte-996a7bcf.js",
   "/jsdoc-generator/_app/assets/pages/index.svelte-219e95a4.css",
-  "/jsdoc-generator/_app/chunks/vendor-5f4d3b4e.js"
+  "/jsdoc-generator/_app/chunks/vendor-453749c7.js"
 ];
 const files = [
   "/jsdoc-generator/android-chrome-192x192.png",
