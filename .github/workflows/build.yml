@@ -1,22 +1,23 @@
 on:
+  workflow_dispatch:
   release:
     types:
       - released
+      - created
+      - published
 
 jobs:
   Deploy-Github-Pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Read .nvmrc
-        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
-        id: nvm
-      - name: Use Node.js ${{ steps.nvm.outputs.NODE_VERSION }}
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
-      - run: npm ci
-      - run: npm run build
+          node-version-file: '.nvmrc'
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          run_install: true
+      - run: pnpm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
