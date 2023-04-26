@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/rafistrauss/jsdoc-generator/compare/v2.0.0...v2.0.1) (2023-04-26)
+
+
+### Bug Fixes
+
+* retrigger build with ci changes ([826691c](https://github.com/rafistrauss/jsdoc-generator/commit/826691c6b0f77e8113a35cd8de10becfbb0a0b0b))
+
 ## [2.0.0](https://github.com/rafistrauss/jsdoc-generator/compare/v1.5.0...v2.0.0) (2023-04-26)
 
 
