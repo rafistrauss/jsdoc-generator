@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/rafistrauss/jsdoc-generator/compare/v2.0.1...v2.0.2) (2023-04-26)
+
+
+### Bug Fixes
+
+* use correct path to images for manifest ([300830b](https://github.com/rafistrauss/jsdoc-generator/commit/300830bbe6f0fe913595ae6a74eb1b3f9044b902))
+
 ## [2.0.1](https://github.com/rafistrauss/jsdoc-generator/compare/v2.0.0...v2.0.1) (2023-04-26)
 
 
