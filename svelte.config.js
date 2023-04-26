@@ -5,19 +5,7 @@ const dev = process.env.NODE_ENV === 'development';
 /** @type {import('@sveltejs/kit').Config} */
 export default {
 	kit: {
-		vite: {
-			server: {
-				fs: {
-					allow: ['..']
-				}
-			}
-		},
-		adapter: adapter({
-			// default options are shown
-			pages: 'build',
-			assets: 'build',
-			fallback: null
-		}),
+		adapter: adapter(),
 		paths: {
 			base: dev ? '' : '/jsdoc-generator'
 		}

@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script>
 	import { version } from '../../package.json';
 	import ogImageUrl from '$lib/images/jsdoc-gen.jpg';
