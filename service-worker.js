@@ -1,12 +1,12 @@
 const a = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), p = [
-  a + "/_app/immutable/entry/app.7bd51bc0.js",
-  a + "/_app/immutable/chunks/0.4bb3225d.js",
-  a + "/_app/immutable/chunks/1.08de6f29.js",
-  a + "/_app/immutable/chunks/2.fd397927.js",
+  a + "/_app/immutable/entry/app.410c9576.js",
+  a + "/_app/immutable/chunks/0.48d5015e.js",
+  a + "/_app/immutable/chunks/1.286be1fd.js",
+  a + "/_app/immutable/chunks/2.d0ff7987.js",
   a + "/_app/immutable/chunks/_page.da46b06b.js",
   a + "/_app/immutable/chunks/index.19ea207c.js",
-  a + "/_app/immutable/chunks/paths.9b69214d.js",
-  a + "/_app/immutable/chunks/singletons.35c4904b.js",
+  a + "/_app/immutable/chunks/paths.0d0070c4.js",
+  a + "/_app/immutable/chunks/singletons.aba86686.js",
   a + "/_app/immutable/assets/fira-mono-all-400-normal.1e3b098c.woff",
   a + "/_app/immutable/assets/fira-mono-cyrillic-400-normal.c7d433fd.woff2",
   a + "/_app/immutable/assets/fira-mono-cyrillic-ext-400-normal.3df7909e.woff2",
@@ -14,15 +14,15 @@ const a = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), p
   a + "/_app/immutable/assets/fira-mono-greek-ext-400-normal.9e2fe623.woff2",
   a + "/_app/immutable/assets/fira-mono-latin-400-normal.e43b3538.woff2",
   a + "/_app/immutable/assets/fira-mono-latin-ext-400-normal.6bfabd30.woff2",
-  a + "/_app/immutable/entry/start.4e274f3f.js",
-  a + "/_app/immutable/entry/error.svelte.fd555bba.js",
+  a + "/_app/immutable/entry/start.782211a2.js",
+  a + "/_app/immutable/entry/error.svelte.31dece83.js",
   a + "/_app/immutable/assets/svelte-logo.87df40b8.svg",
   a + "/_app/immutable/assets/jsdoc-gen.15a9837a.jpg",
   a + "/_app/immutable/assets/_layout.8e074d8d.css",
-  a + "/_app/immutable/entry/_layout.svelte.9505412a.js",
+  a + "/_app/immutable/entry/_layout.svelte.c41e4f69.js",
   a + "/_app/immutable/assets/_page.0b7b2da1.css",
   a + "/_app/immutable/entry/_page.js.9c5eea7e.js",
-  a + "/_app/immutable/entry/_page.svelte.43471dfa.js"
+  a + "/_app/immutable/entry/_page.svelte.9eee8a03.js"
 ], l = [
   a + "/android-chrome-192x192.png",
   a + "/android-chrome-512x512.png",
@@ -33,7 +33,7 @@ const a = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), p
   a + "/google2ee7c597b8c66979.html",
   a + "/robots.txt",
   a + "/site.webmanifest"
-], m = "1682474008054", c = `cache-${m}`, o = [
+], m = "1682474943800", c = `cache-${m}`, o = [
   ...p,
   // the app itself
   ...l
