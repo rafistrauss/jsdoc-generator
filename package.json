@@ -1,6 +1,6 @@
 {
 	"name": "jsdoc-type-generator",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
