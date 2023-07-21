@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/rafistrauss/jsdoc-generator/compare/v2.0.2...v2.0.3) (2023-07-21)
+
+
+### Bug Fixes
+
+* Update deps ([1055dd2](https://github.com/rafistrauss/jsdoc-generator/commit/1055dd23f0a1391ccab73266f56ea6af08122b56))
+
 ## [2.0.2](https://github.com/rafistrauss/jsdoc-generator/compare/v2.0.1...v2.0.2) (2023-04-26)
 
 
