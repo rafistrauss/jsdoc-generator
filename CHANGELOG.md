@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.4](https://github.com/rafistrauss/jsdoc-generator/compare/v2.0.3...v2.0.4) (2023-07-28)
+
+
+### Bug Fixes
+
+* Use token with correct perms ([#18](https://github.com/rafistrauss/jsdoc-generator/issues/18)) ([7c91914](https://github.com/rafistrauss/jsdoc-generator/commit/7c91914ca099575bcf8faa08931885d2c2ea7d26))
+
 ## [2.0.3](https://github.com/rafistrauss/jsdoc-generator/compare/v2.0.2...v2.0.3) (2023-07-21)
 
 
